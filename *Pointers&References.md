@@ -23,9 +23,9 @@ int main()
 ```
 ###### What does it mean?
 ```
-The ptr variable in the code block above stores the memory address of the variable var.
+The ptr variable in the code block above stores the memory address of the variable a.
 When we place the ampersand charachter in front of a variable we are creating a reference to that memory address.
-The &var is the memory address of var. 
+The &a is the memory address of a. 
 When we place the asterik in front of a type or in this case void, we creating a pointer and naming it ptr in the example.
 ```
 ## Dereferencing a Pointer
