@@ -30,11 +30,14 @@ When we place the asterik in front of a type or in this case void, we creating a
 ```
 ## Dereferencing a Pointer
 ```C++
-//NOTE: In order to dereference a pointer it must have a type.
+#include <iostream>
+using namespace std;
+
 int main()
 {
   int a = 5;
   int* ptr = &a;
+  //NOTE: In order to dereference a pointer it must have a type.
   cout << *ptr << endl;
   cout << a << endl;
 }
