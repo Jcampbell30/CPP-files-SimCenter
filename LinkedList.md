@@ -79,3 +79,4 @@ void printList(node* n)
 0 
 NOTE: The fourth node's next value is 0 or NULL because it is the last member of the list and does not link to another node.
 ```
+###### Sources:
