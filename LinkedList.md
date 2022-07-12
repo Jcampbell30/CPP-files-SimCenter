@@ -15,3 +15,40 @@ class Node
   Node* next;
 };
 ```
+## Main Method Implementation:
+```C++
+int main()
+{
+   //creating four nodes
+   node* head = NULL;
+   node* second = NULL;
+   node* third = NULL;
+   node* fourth = NULL;
+ 
+   //allocate four nodes in the heap
+   head = new node();
+   second = new node();
+   third = new node();
+   fourth = new node();
+ 
+ 
+ 
+   head->data = 1; // assign data in first node
+   head->next = second; // Link first node with
+   // the second node
+ 
+   // assign data to second node
+   second->data = 2;
+    // Link second node with the third node
+   second->next = third;
+ 
+   third->data = 3; // assign data to third node
+ 
+   third->next = fourth;//Link third to fourth node
+  
+   fourth->data = 4;//Assign data to fourth node
+   fourth->next = NULL;//No link
+ 
+}
+```
+
