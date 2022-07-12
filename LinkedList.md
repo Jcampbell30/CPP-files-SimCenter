@@ -80,3 +80,5 @@ void printList(node* n)
 NOTE: The fourth node's next value is 0 or NULL because it is the last member of the list and does not link to another node.
 ```
 ###### Sources:
+Linked List Data Structure.(2022,June 18). Geeks for Geeks.
+[(https://www.geeksforgeeks.org/data-structures/linked-list/)]
