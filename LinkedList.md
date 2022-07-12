@@ -8,11 +8,11 @@ A linked list has two parts: the data in which it contains, and the link to the 
 ```C++
 //Linked Lists can be implemented with a class or a struct. The only difference is the access modifier.
 //If implemented with a class, you must specify data as public.
-class Node
+class node
 {
   public:
   int data;
-  Node* next;
+  node* next;
 };
 ```
 ## Main Method Implementation:
@@ -51,4 +51,31 @@ int main()
  
 }
 ```
-
+## Traversing a linked list
+```C++
+//This function prints the value of the data and the memory address of next node
+void printList(node* n)
+//function to print linked list
+{
+  
+   while(n!=NULL)
+   {
+       std::cout<<n->data<< " "<<std::endl;
+       std::cout<<n->next<<" "<<std::endl;
+       n = n->next;
+   }
+ 
+}
+```
+## Output
+```
+1 
+0x5579d8a482a0 
+2 
+0x5579d8a482c0 
+3 
+0x5579d8a482e0 
+4 
+0 
+NOTE: The fourth node's next value is 0 or NULL because it is the last member of the list and does not link to another node.
+```
