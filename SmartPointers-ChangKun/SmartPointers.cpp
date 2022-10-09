@@ -35,10 +35,10 @@ int main()
         unique_ptr<float> uniquePie = make_unique<float>(3.14);
         cout<<"the value of this unique pointer is: " << *uniquePie <<endl;
     }
-    cout<<"delete unique poiner"<<endl;
+    cout<<"deletes unique pointer for you"<<endl;
     
-    shared_ptr<int> sharePtr1 = make_shared<int>(20);
-    auto sharePtr2 = sharePtr1;
+    shared_ptr<int> sharePtr1 = make_shared<int>(20);//creating shared pointer
+    auto sharePtr2 = sharePtr1;//setting the old address to the new one
     cout<< "this is sharePtr1 memory address: " << sharePtr1<<endl;
     cout<< "this is sharePtr2 memory address: " << sharePtr1<<endl;
 
